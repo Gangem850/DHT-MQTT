@@ -1,0 +1,22 @@
+{
+  "name": "dht-mqtt",
+  "version": "1.0.0",
+  "description": "Utility to publish DHT temp/humidity sensor values to MQTT, written in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gangemstyle850",
+  "license": "MIT",
+  "bin": {
+    "dht-mqtt": "index.js"
+  },
+  "dependencies": {
+    "async-mqtt": "^2.6.1",
+    "mqtt": "^4.2.8",
+    "node-dht-sensor": "^0.4.3",
+    "pino": "^6.13.3",
+    "pino-pretty": "^7.0.1",
+    "yargs": "^17.2.1"
+  }
+}

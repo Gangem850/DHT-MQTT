@@ -1,0 +1,20 @@
+[Unit]
+Description=DHT-MQTT Service
+
+[Service]
+ExecStart=dht-mqtt
+Restart=always
+User=pi
+Group=pi
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+Environment=DHTMQTT_MQTTBROKER=192.168.2.7
+Environment=DHTMQTT_MQTTUSER=cam-pole-1
+Environment=DHTMQTT_MQTTPASS=1234567890
+Environment=DHTMQTT_MQTTTOPIC=cam-pole-1
+Environment=DHTMQTT_SENSORTYPE=11
+Environment=DHTMQTT_POLLINGINTERVAL=60
+WorkingDirectory=/home/pi/DHT-MQTT
+
+[Install]
+WantedBy=multi-user.target
